@@ -13,10 +13,9 @@
         <database>postgresql</database>
     </database-support>
         <owner url="mailto:jon@jongriffin.com">Jon Griffin</owner>
-        <summary>This is all the US States.</summary>
-        <vendor url="www.mayuli.com">Mayuli Enterprises, LLC</vendor>
-        <description format="text/plain">This is all the US States.
-It is needed by many other packages.</description>
+        <summary>US States</summary>
+        <vendor url="http://www.mayuli.com">Mayuli Enterprises, LLC</vendor>
+        <description format="text/plain">This is all the US States.  Provides abbreviation, name, and FIPS state code.</description>
 
         <provides url="ref-us-states" version="0.1d"/>
         <requires url="acs-kernel" version="4.6.2"/>
