@@ -7,7 +7,7 @@
 create table us_states (
     abbrev          char(2)
                     constraint us_states_abbrev_pk primary key,
-    state_name      varchar2(100)
+    state_name      varchar(100)
 	            constraint us_states_state_name_nn not null
                     constraint us_states_state_name_uq unique,
     fips_state_code char(2)
@@ -28,13 +28,14 @@ The FIPS code used by the USPS for certain delivery types.
 
 -- add this table into the reference repository
 select acs_reference__new (
-    table_name      => 'US_STATES',
-    source          => 'Internal',
-    source_url      => '',
-    last_update     => sysdate,
-    internal_data_p => 't',
-    effective_date  => sysdate
+    'US_STATES',
+    null,
+    'Internal',
+    '',
+    now()
 );
 
 -- load the data
+begin;
 \i ../common/ref-us-states-data.sql
+end;
