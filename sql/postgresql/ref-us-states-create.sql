@@ -34,8 +34,3 @@ select acs_reference__new (
     '',
     now()
 );
-
--- load the data
-begin;
-\i ../common/ref-us-states-data.sql
-end;

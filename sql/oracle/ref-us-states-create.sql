@@ -41,4 +41,3 @@ begin
 commit;
 end;
 /
-@ '../common/ref-us-states-data.sql'
