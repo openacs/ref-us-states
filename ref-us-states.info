@@ -28,6 +28,7 @@ It is needed by many other packages.</description>
             <file type="data_model_create" db_type="oracle" path="sql/oracle/ref-us-states-create.sql"/>
             <file type="data_model_drop" db_type="oracle" path="sql/oracle/ref-us-states-drop.sql"/>
             <file type="data_model_create" db_type="postgresql" path="sql/postgresql/ref-us-states-create.sql"/>
+            <file type="data_model_drop" db_type="postgresql" path="sql/postgresql/ref-us-states-drop.sql"/>
         </files>
         <parameters>
         <!-- No version parameters -->
